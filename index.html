@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn</title>
+	<meta charset="UTF-8">
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+	body{
+		background-image: url('bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		overflow-x: hidden;
+	}
+	.topnav-logo h1{
+		float: left;
+		color: rgba(255, 255, 255, 1);
+		text-align: center;
+		padding: 0 20px;
+		text-decoration: none;
+		font-size: 20px;
+		cursor: pointer;	
+	}
+
+	.topnav-content{
+		float: right;
+	}
+
+	.topnav {
+		/*background: rgba(68, 94, 41,0.5);*/
+		color: white;
+		overflow: hidden;
+		border: 1px solid rgba(68, 94, 41,0.2);
+	}
+
+	.topnav a {
+		float: left;
+		color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.topnav a:hover {
+		text-shadow: 0px 0px 5px  rgb(179,179,78);
+	}
+
+	.topnav a.active {
+		background: rgba(68, 94, 41,0.5);
+		color: white;
+	}
+	.btn {
+		text-decoration: none;
+		border:0;
+		color: rgba(255, 255, 255, 0.8);
+		background-image: linear-gradient(to right,rgb(68, 94, 41),rgb(179,179,78));
+		padding: 15px 40px;
+		border-radius: 4px;
+		font-weight: normal;
+		text-transform: uppercase;
+		transition: all 0.2s ease-in-out;
+	}
+	.container{
+		color: white;
+		top: 40%;
+		padding: 0 10%;
+		position: absolute;
+	}
+	.glow-button:hover {
+		color: rgba(255, 255, 255, 1);
+		box-shadow: 0 0px 15px rgba(179, 179, 78, .4);
+	}
+
+</style>
+<body>
+	<div class="topnav">
+		<div class="topnav-logo">
+			<h1>Brainsys</h1>
+		</div>
+		<div class="topnav-content">
+			<a class="active" href="#">Home</a>
+			<a href="#">About</a>
+			<a href="login-signup/index.html">Login</a>
+			<a href="login-signup/index.html">Signup</a>
+		</div>
+		
+	</div>
+	<div class="container">
+		<h2>Learn more<br>Earn more..!!</h2>
+		<button type="button" class="btn glow-button" data-toggle="button" aria-pressed="false" autocomplete="off">Start Learning</button>
+
+	</div>
+
+	
+</body>
+</html>

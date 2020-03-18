@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In / Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <section class="container">
+      <article class="half">
+         <h1>Brainsys</h1>
+         <div class="tabs">
+            <span class="tab signin active"><a href="#signin">Login</a></span>
+            <span class="tab signup"><a href="#signup">Sign up</a></span>
+        </div>
+        <div class="content">
+            <div class="signin-cont cont" id="signup">
+               <form action="javascript:validate_login()" method="post" enctype="multipart/form-data">
+                  <input type="email" name="email" id="email" class="inpt" required="required" placeholder="Your email">
+                  <label for="email">Your email</label>
+                  <input type="password" name="password" id="password_login" class="inpt" required="required" placeholder="Your password">
+                  <label for="password">Your password</label>
+                  <small onclick="change('password_login')">show password</small>
+                  <input type="password" name="conf_password" id="conf_password" class="inpt" required="required" placeholder="Confirm password">
+                  <label for="password">Confirm password</label>
+                  <small onclick="change('conf_password')">show password</small>
+                  <input type="checkbox" id="remember" class="checkbox" checked>
+                  <label for="remember">Remember me</label>
+                  <div class="submit-wrap">
+                     <input type="submit" value="Login" class="submit">
+                     <a href="#" class="more">Forgot your password?</a>
+                 </div>
+             </form>
+         </div>
+         <div class="signup-cont cont" id=signin>
+           <form action="javascript:validate_signup()" method="post" enctype="multipart/form-data">
+             <div class="row">
+                <div class="col p-2">
+                   <input type="name" name="name" id="name" class="inpt" required="required" placeholder="Your name">
+                   <label for="name">Your name</label>
+               </div>
+               <div class="col p-2">
+                   <input type="email" name="email" id="email" class="inpt" required="required" placeholder="Your email">
+                   <label for="email">Your email</label>
+               </div>	
+           </div>
+           <div class="row">
+            <div class="col-7 p-2">
+               <label for="birthday">Age</label>
+               <input type="date" id="age" name="age" class="inpt" placeholder="Your age">
+           </div>
+           <div class="col-5 p-2">
+               <label for="birthday">PIN CODE</label>
+               <input type="text" id="pincode" name="pincode" class="inpt" placeholder="PIN CODE">
+           </div>
+       </div>     
+       <input type="password" name="password" id="password" class="inpt" required="required" placeholder="Your password">
+       <label for="password">Your password</label>
+       <small onclick="change('password')">show password</small>
+       <div class="submit-wrap">
+         <input type="submit" value="Sign up" class="submit">
+         <a href="#" class="more">Terms and conditions</a>
+     </div>
+ </form>
+</div>
+</div>
+</article>
+<div class="half bg"></div>
+</section>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</body>
+</html>
